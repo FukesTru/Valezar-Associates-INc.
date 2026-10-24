@@ -207,7 +207,9 @@ strong { font-weight: 600; }
 .menu-open .menu-toggle .icon-close { display: block; }
 @media (min-width: 600px) { .header-phone { display: inline-flex; } }
 @media (min-width: 900px) { .header-contact { display: inline-flex; } }
-@media (min-width: 1140px) {
+/* The full menu needs about 1240px; below that the hamburger menu is used */
+.nav-link, .header-phone, .header-contact { white-space: nowrap; }
+@media (min-width: 1240px) {
   .nav-desktop { display: block; }
   .menu-toggle { display: none; }
   .header-inner { gap: 16px; }
@@ -230,7 +232,7 @@ strong { font-weight: 600; }
 .mm-sub a { min-height: 46px; font-size: 16px; font-weight: 500; color: var(--muted); }
 .mm-actions { display: grid; gap: 12px; margin-top: 28px; }
 .mm-actions .btn { width: 100%; }
-@media (min-width: 1140px) { .mobile-menu { display: none !important; } }
+@media (min-width: 1240px) { .mobile-menu { display: none !important; } }
 .menu-open { overflow: hidden; }
 
 /* ---------- Hero ---------- */

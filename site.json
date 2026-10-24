@@ -51,7 +51,7 @@
     "review_link": ""
   },
   "crm_location_id": "",
-  "vercel_project": "",
-  "preview_url": "https://valezar.pages.dev",
+  "vercel_project": "valezar",
+  "preview_url": "https://valezar.vercel.app",
   "domain": "www.valezar.com"
 }
