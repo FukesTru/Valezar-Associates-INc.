@@ -1,0 +1,4 @@
+# Cloudflare Pages: every address stays out of search engines until launch.
+# Delete this block at go-live. (On Vercel, vercel.json already sends noindex on *.vercel.app.)
+/*
+  X-Robots-Tag: noindex, nofollow

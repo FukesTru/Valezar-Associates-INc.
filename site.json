@@ -1,36 +1,49 @@
 {
   "business": {
-    "name": "",
-    "known_as": "",
-    "legal_name": "",
-    "street": "",
-    "city": "",
-    "state": "",
-    "postal_code": "",
+    "name": "Valezar & Associates",
+    "known_as": "Valezar & Associates",
+    "legal_name": "Valezar & Associates Inc.",
+    "owner": "Mirtha C. Almanzar",
+    "owner_credentials": "EA, MST",
+    "street": "12485 SW 137th Ave., Ste. 206",
+    "city": "Miami",
+    "state": "FL",
+    "postal_code": "33186",
     "country": "US",
-    "phone": "",
-    "email": "",
-    "website_current": "",
-    "timezone": ""
+    "phone": "(305) 252-5505",
+    "email": "admin@valezar.com",
+    "website_current": "https://www.valezar.com",
+    "timezone": "America/New_York",
+    "geo": { "latitude": 25.6517, "longitude": -80.4149 }
   },
   "online": {
-    "facebook": "",
-    "instagram": "",
-    "google_business_profile": "",
+    "facebook": "https://www.facebook.com/MiamiAccountants",
+    "instagram": "https://www.instagram.com/mirthaalmanzar/",
+    "linkedin": "https://www.linkedin.com/in/mirthawithvalezar/",
+    "google_business_profile": "https://share.google/JvQztzuSTFOFvhbTu",
     "google_review_link": ""
   },
-  "hours": "",
-  "areas_served": [],
-  "services": [],
-  "booking_system_current": "",
+  "hours": "Monday to Friday 9 AM to 6 PM. Saturday and Sunday closed.",
+  "areas_served": ["Miami", "Kendall", "Homestead", "Doral", "South Miami", "Deerfield Beach", "Weston", "Fort Lauderdale"],
+  "services": ["Fractional CFO", "Tax Planning", "Monthly Bookkeeping", "Payroll", "Business Tax Preparation Services", "Personal Tax Preparation Services"],
+  "booking_system_current": "Calendly (calendly.com/mirtha-1), linked as Appointments on the Google Business Profile. The new site does not link it. The agency owner decides whether it gets a link.",
   "brand": {
-    "colour_main": "",
-    "colour_accent": "",
-    "colours_other": [],
+    "colour_main": "#6D1211",
+    "colour_accent": "#B8935A",
+    "colours_other": ["#58595B", "#F5F4F2", "#2A2526"],
     "font": "Montserrat",
-    "notes": ""
+    "notes": "Brick Red, Silver and Gold (written in the Brand Fonts box of the onboarding form; the Brand Colors box was empty). Brick red is the logo red #6D1211, silver is #F5F4F2 for tinted bands with the logo grey #58595B for secondary text, gold is #B8935A for accents only (never text on white). No font given, so Montserrat. Logo format answer: JPEG only."
   },
-  "images": [],
+  "images": [
+    { "file": "logo-primary.svg", "note": "Full logo: brick red VA mark in a grey square, VALEZAR in brick red, & associates in grey, tagline Accounting, Bookkeeping, Quickbooks Consulting, Tax Planning. Vector with a transparent background, taken unchanged from the structured data of the client's current website. Header, footer, social image." },
+    { "file": "logo-primary.png", "note": "The same full logo as a 600px transparent PNG, for structured data only." },
+    { "file": "logo-icon.svg", "note": "The VA mark in its grey square on its own, the same two shapes cut from logo-primary.svg. Source of the favicons." },
+    { "file": "photo-mirtha-almanzar.jpg", "note": "Owner Mirtha C. Almanzar, studio headshot on a grey backdrop, dark suit and red blouse. Cropped 4:5 from the square original on the current website. Home and About hero, contact cards, chat pop-up." },
+    { "file": "photo-staling-almanzar.jpg", "note": "Staling Almanzar, Payroll and HR Manager, studio headshot, dark suit and grey tie. From the current website. Team grids." },
+    { "file": "photo-cynthia-moncada.jpg", "note": "Cynthia Moncada, Accounting Manager, studio headshot, black blazer. From the current website. Team grids." },
+    { "file": "photo-katherine-guerrero.jpg", "note": "Katherine Guerrero, Accounting Associate, studio headshot, black blazer and white blouse. From the current website. Team grids." },
+    { "file": "photo-melissa-lacayo.jpg", "note": "Melissa Lacayo, Firm Administrator, studio headshot, black blazer and white collar. From the current website. Team grids." }
+  ],
   "must_keep": "",
   "integrations": {
     "form_embed": "",
@@ -39,6 +52,6 @@
   },
   "crm_location_id": "",
   "vercel_project": "",
-  "preview_url": "",
-  "domain": ""
+  "preview_url": "https://valezar.pages.dev",
+  "domain": "www.valezar.com"
 }
