@@ -1,0 +1,6 @@
+/* The design system goes here on the first build (BRIEF.md, "A design system, specified in numbers"). */
+:root { --font: 'Montserrat', system-ui, -apple-system, 'Segoe UI', sans-serif; }
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; }
+body { font-family: var(--font); line-height: 1.6; color: #1a1a1a; background: #fff; }
+.holding { min-height: 100vh; display: grid; place-items: center; padding: 24px; text-align: center; }

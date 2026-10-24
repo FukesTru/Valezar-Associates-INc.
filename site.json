@@ -1,0 +1,44 @@
+{
+  "business": {
+    "name": "",
+    "known_as": "",
+    "legal_name": "",
+    "street": "",
+    "city": "",
+    "state": "",
+    "postal_code": "",
+    "country": "US",
+    "phone": "",
+    "email": "",
+    "website_current": "",
+    "timezone": ""
+  },
+  "online": {
+    "facebook": "",
+    "instagram": "",
+    "google_business_profile": "",
+    "google_review_link": ""
+  },
+  "hours": "",
+  "areas_served": [],
+  "services": [],
+  "booking_system_current": "",
+  "brand": {
+    "colour_main": "",
+    "colour_accent": "",
+    "colours_other": [],
+    "font": "Montserrat",
+    "notes": ""
+  },
+  "images": [],
+  "must_keep": "",
+  "integrations": {
+    "form_embed": "",
+    "chat_widget": "",
+    "review_link": ""
+  },
+  "crm_location_id": "",
+  "vercel_project": "",
+  "preview_url": "",
+  "domain": ""
+}
