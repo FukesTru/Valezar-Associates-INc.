@@ -521,3 +521,29 @@ h2 + .lead, h2 + p { margin-top: 16px; }
 .btn-text:hover { background: #745829; color: var(--white); }
 /* Two panels side by side are the same height */
 .split:has(> .panel + .panel) { align-items: stretch; }
+
+/* ---------- Opening transition, home page only ----------
+   About 1.5 seconds: the logo settles in, a gold rule draws under it, then the panel lifts away and the hero
+   eases in behind it. CSS alone finishes it, so it never hangs without the script. A tap, scroll or key press
+   skips it, and anyone who asks their device for reduced motion never sees it. */
+.intro {
+  position: fixed; inset: 0; z-index: 2147483646; display: grid; place-items: center;
+  background: var(--tint); box-shadow: 0 1px 0 var(--line), 0 18px 40px -20px rgba(30, 27, 27, 0.25);
+  animation: intro-lift 0.65s cubic-bezier(0.7, 0, 0.2, 1) 0.85s forwards;
+}
+.intro-inner { display: grid; justify-items: center; gap: 24px; animation: intro-out 0.35s ease 0.75s forwards; }
+.intro img { width: min(300px, 64vw); height: auto; opacity: 0; transform: translateY(10px) scale(0.98); animation: intro-in 0.6s var(--ease) 0.05s forwards; }
+.intro-rule { display: block; width: 120px; height: 2px; background: var(--gold); transform: scaleX(0); transform-origin: left center; animation: intro-rule 0.5s var(--ease) 0.3s forwards; }
+.intro.is-skipped { animation: intro-fade 0.2s ease forwards; }
+@keyframes intro-in { to { opacity: 1; transform: none; } }
+@keyframes intro-rule { to { transform: scaleX(1); } }
+@keyframes intro-out { to { opacity: 0; transform: translateY(-8px); } }
+@keyframes intro-lift { to { transform: translateY(-100%); visibility: hidden; } }
+@keyframes intro-fade { to { opacity: 0; visibility: hidden; } }
+/* The hero settles in as the panel lifts (CSS only, so it never waits for the script), and the round phone
+   buttons arrive just after */
+.has-intro .hero [data-reveal] { animation: hero-in 0.8s var(--ease) calc(var(--d, 0s) + 1s) both; }
+@keyframes hero-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+.has-intro .round-btn { animation: intro-late 0.5s var(--ease) 1.3s both; }
+@keyframes intro-late { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .intro { display: none; } }

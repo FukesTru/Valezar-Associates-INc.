@@ -72,6 +72,25 @@
     link.addEventListener('click', scrollToForm);
   });
 
+  // Opening transition on the home page: any tap, scroll or key press skips it, and it removes itself when done
+  var intro = document.querySelector('.intro');
+  if (intro) {
+    var skipEvents = ['pointerdown', 'keydown', 'wheel', 'touchstart'];
+    var skip = function () {
+      intro.classList.add('is-skipped');
+      body.classList.remove('has-intro');
+      skipEvents.forEach(function (name) { window.removeEventListener(name, skip); });
+    };
+    skipEvents.forEach(function (name) { window.addEventListener(name, skip, { passive: true }); });
+    var done = function () {
+      if (intro.isConnected) intro.remove();
+      skipEvents.forEach(function (name) { window.removeEventListener(name, skip); });
+    };
+    intro.addEventListener('animationend', function (event) { if (event.target === intro) done(); });
+    // On a slow connection the script can arrive after the panel has already lifted
+    if (performance.now() > 1600) done();
+  }
+
   // Scroll movement: sections settle into place as they come into view
   var revealed = document.querySelectorAll('[data-reveal]');
   if (reduceMotion || !('IntersectionObserver' in window)) {
