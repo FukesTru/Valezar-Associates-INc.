@@ -87,6 +87,6 @@ Mirtha, your new website is built. Before it goes live, please send the items in
 
 59. **First conversation checklist.** For a business, the last 2 years of returns, recent statements, a list of accounts, payroll reports, entity documents and IRS or Florida letters. For a personal return, last year's return, W-2s and 1099s, other income, mortgage and property tax statements and IRS letters.
 60. **Texts.** Clients who agree may get texts about appointments, billing and payroll. Reply STOP stops them.
-61. **Privacy policy.** A new privacy policy for the website, followed by your SMS Terms and Conditions from your current site, word for word except that the example address now reads ZIP 33186 (it said 33185) and "10:00am" reads "10am".
+61. **Privacy policy.** A new privacy policy for the website (it explains that the contact form and the chat run through LeadConnector, the platform behind your client messages), followed by your SMS Terms and Conditions from your current site, word for word except that the example address now reads ZIP 33186 (it said 33185) and "10:00am" reads "10am".
 62. **Terms of use.** Your current site has no terms page, so we wrote one. It says Florida law applies and disputes go to the courts of Miami-Dade County.
 63. **Appointments.** Your Google profile links to a Calendly page for appointments. The new website does not take bookings. Every Contact us and Call button goes to the contact form or the phone.

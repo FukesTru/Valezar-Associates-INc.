@@ -1,5 +1,5 @@
-// Valezar & Associates site script: phone menu, dropdowns, Contact us scrolling, chat pop-up,
-// the contact form and the scroll movement. The site reads and works without it.
+// Valezar & Associates site script: phone menu, dropdowns, Contact us scrolling and the scroll movement.
+// The site reads and works without it. The contact form and the chat come from the CRM embeds.
 (function () {
   'use strict';
   var root = document.documentElement;
@@ -8,8 +8,6 @@
   var header = document.querySelector('.site-header');
   var menuButton = document.querySelector('[data-menu-toggle]');
   var menu = document.getElementById('mobile-menu');
-  var chatButton = document.querySelector('[data-chat-toggle]');
-  var chatPanel = document.getElementById('chat-panel');
 
   // Phone menu
   function setMenu(open) {
@@ -18,7 +16,6 @@
     menuButton.setAttribute('aria-expanded', String(open));
     menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     body.classList.toggle('menu-open', open);
-    if (open) setChat(false);
   }
   if (menuButton) {
     menuButton.addEventListener('click', function () { setMenu(menu.hidden); });
@@ -49,29 +46,9 @@
     }
   });
 
-  // Chat pop-up
-  function setChat(open) {
-    if (!chatPanel || !chatButton) return;
-    chatPanel.hidden = !open;
-    chatButton.setAttribute('aria-expanded', String(open));
-    chatButton.setAttribute('aria-label', open ? 'Close chat' : 'Open chat');
-    body.classList.toggle('chat-open', open);
-    if (open) {
-      var first = chatPanel.querySelector('a, button');
-      if (first) first.focus({ preventScroll: true });
-    }
-  }
-  if (chatButton) {
-    chatButton.addEventListener('click', function () { setChat(chatPanel.hidden); });
-  }
-  document.querySelectorAll('[data-chat-close]').forEach(function (button) {
-    button.addEventListener('click', function () { setChat(false); chatButton.focus(); });
-  });
-
   document.addEventListener('keydown', function (event) {
     if (event.key !== 'Escape') return;
     if (menu && !menu.hidden) { setMenu(false); menuButton.focus(); }
-    if (chatPanel && !chatPanel.hidden) { setChat(false); chatButton.focus(); }
   });
 
   // Every Contact us button lands with the whole form in the middle of the screen,
@@ -81,7 +58,6 @@
     if (!target) return;
     event.preventDefault();
     setMenu(false);
-    setChat(false);
     var headerHeight = header ? header.offsetHeight : 0;
     var round = document.querySelector('.round-call');
     var bottomEdge = round && getComputedStyle(round).display !== 'none' ? round.getBoundingClientRect().top - 8 : window.innerHeight;
@@ -94,34 +70,6 @@
   }
   document.querySelectorAll('[data-contact]').forEach(function (link) {
     link.addEventListener('click', scrollToForm);
-  });
-
-  // Contact form. Until the CRM form is connected, sending opens the visitor's email app
-  // with the note filled in, addressed to the firm.
-  document.querySelectorAll('[data-lead-form]').forEach(function (form) {
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      if (!form.reportValidity()) return;
-      var data = new FormData(form);
-      var name = String(data.get('name') || '').trim();
-      var lines = [
-        'Name: ' + name,
-        'Phone: ' + String(data.get('phone') || '').trim(),
-        'Email: ' + String(data.get('email') || '').trim(),
-        'Help with: ' + String(data.get('topic') || ''),
-        'OK to text me about this enquiry: ' + (data.get('sms_ok') ? 'Yes' : 'No'),
-        '',
-        String(data.get('message') || '').trim(),
-        '',
-        'Sent from ' + window.location.href
-      ];
-      var address = form.getAttribute('data-to');
-      var href = 'mailto:' + address + '?subject=' + encodeURIComponent('Website enquiry from ' + name) +
-        '&body=' + encodeURIComponent(lines.join('\n'));
-      var status = form.querySelector('.form-status');
-      if (status) status.textContent = 'Your email app should open with your note ready to send. If it does not, call or text (305) 252-5505.';
-      window.location.href = href;
-    });
   });
 
   // Scroll movement: sections settle into place as they come into view

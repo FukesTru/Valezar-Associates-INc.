@@ -26,11 +26,11 @@ South Miami, Homestead, Doral and Fort Lauderdale (Weston and Deerfield Beach ar
 about; how we work; fees; reviews; questions and answers; firm information; contact; privacy; terms.
 
 **Before go-live:**
-- Get the three CRM pieces into `site.json` `integrations` (form embed, chat widget, review link). Until then
-  the site uses a built-in form that opens the visitor's email app addressed to admin@valezar.com, and a
-  built-in chat pop-up with Call, Text and Contact buttons that sends nothing anywhere. Replace both with the
-  CRM pieces exactly as given; the form sits in `#contact-form` on every page, the chat lives in the footer block.
-  If the CRM form or chat is added, update the privacy policy's "What this website collects on its own" section.
+- The three CRM pieces (LeadConnector form, chat widget and review link) are in `site.json` `integrations` and
+  on every page exactly as given: the form inside `#contact-form`, the chat script once in the footer block.
+  The round call and contact buttons are sized and placed to line up with the chat button (58px, 20px from the
+  bottom) and sit above the chat widget's box so it never swallows a tap. If the chat widget's size or position
+  is changed in the CRM, change `--round` and the round button offsets in `site.css` to match.
 - `public/robots.txt` blocks everything until launch. Swap in the commented launch version in that file.
 - `public/_headers` sends noindex for Cloudflare Pages. Delete it at launch if the site is on Cloudflare.
 - Canonicals, Open Graph addresses and the sitemap already use `https://www.valezar.com/`.
