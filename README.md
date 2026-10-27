@@ -20,10 +20,13 @@ Accounting and tax firm at 12485 SW 137th Ave., Ste. 206, Miami, FL 33186. Owner
 Everything the site says about the firm is in `site.json`. Every fact the client still has to confirm, and
 everything still missing, is in `VERIFY.md`, written so it can be emailed to the client as it is.
 
-**Pages (23 plus 404):** home; services overview plus fractional CFO, tax planning, monthly bookkeeping,
+**Pages (30 plus 404):** home; services overview plus fractional CFO, tax planning, monthly bookkeeping,
 payroll and tax preparation (business and personal share one page); areas we serve plus Kendall, Miami,
 South Miami, Homestead, Doral and Fort Lauderdale (Weston and Deerfield Beach are sections of the areas page);
-about; how we work; fees; reviews; questions and answers; firm information; contact; privacy; terms.
+about; how we work; fees; reviews; questions and answers; firm information; resources plus refund tracker, tax
+deadlines, forms and links, year end tax checklist, 1099 guide and reading financial statements; contact;
+privacy; terms. The resources section replaces the old site's Resources tab; its state link lists live in the
+refund tracker and forms pages. Tax figures on the resources pages change yearly, so review them each January.
 
 **Before go-live:**
 - The three CRM pieces (LeadConnector form, chat widget and review link) are in `site.json` `integrations` and

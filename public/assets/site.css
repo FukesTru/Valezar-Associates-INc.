@@ -178,7 +178,7 @@ strong { font-weight: 600; }
 .nav-desktop { display: none; }
 .nav-list { list-style: none; display: flex; align-items: center; gap: 2px; }
 .nav-list > li { position: relative; }
-.nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 10px 12px; font-size: 15px; font-weight: 600; color: var(--ink); text-decoration: none; border-radius: 8px; background: none; border: 0; font-family: inherit; cursor: pointer; }
+.nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 10px 10px; font-size: 15px; font-weight: 600; color: var(--ink); text-decoration: none; border-radius: 8px; background: none; border: 0; font-family: inherit; cursor: pointer; }
 .nav-link:hover { color: var(--brand); background: var(--tint); }
 .nav-link .icon { width: 16px; height: 16px; transition: transform 0.2s var(--ease); }
 .submenu {
@@ -207,9 +207,9 @@ strong { font-weight: 600; }
 .menu-open .menu-toggle .icon-close { display: block; }
 @media (min-width: 600px) { .header-phone { display: inline-flex; } }
 @media (min-width: 900px) { .header-contact { display: inline-flex; } }
-/* The full menu needs about 1240px; below that the hamburger menu is used */
+/* The full menu needs about 1280px; below that the hamburger menu is used */
 .nav-link, .header-phone, .header-contact { white-space: nowrap; }
-@media (min-width: 1240px) {
+@media (min-width: 1280px) {
   .nav-desktop { display: block; }
   .menu-toggle { display: none; }
   .header-inner { gap: 16px; }
@@ -233,7 +233,7 @@ strong { font-weight: 600; }
 .mm-sub a { min-height: 46px; font-size: 16px; font-weight: 500; color: var(--muted); }
 .mm-actions { display: grid; gap: 12px; margin-top: 28px; }
 .mm-actions .btn { width: 100%; }
-@media (min-width: 1240px) { .mobile-menu { display: none !important; } }
+@media (min-width: 1280px) { .mobile-menu { display: none !important; } }
 .menu-open { overflow: hidden; }
 
 /* ---------- Hero ---------- */
@@ -547,3 +547,76 @@ h2 + .lead, h2 + p { margin-top: 16px; }
 .has-intro .round-btn { animation: intro-late 0.5s var(--ease) 1.3s both; }
 @keyframes intro-late { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .intro { display: none; } }
+
+/* ---------- Home hero: centered hook on a faint ledger grid ----------
+   Pill, headline with the gold-underlined hook, the answer, the two buttons, the Google rating and the services.
+   The text is centered, so it gets a reading width; everything else on the site stays full width. */
+.hero-center { position: relative; overflow: hidden; background: var(--tint); border-bottom: 1px solid var(--line); text-align: center; padding: 44px 0 56px; }
+.hero-center::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background-image: linear-gradient(to right, rgba(109, 18, 17, 0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(109, 18, 17, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px; background-position: center top;
+  -webkit-mask-image: radial-gradient(ellipse 70% 75% at 50% 40%, #000 30%, transparent 100%);
+  mask-image: radial-gradient(ellipse 70% 75% at 50% 40%, #000 30%, transparent 100%);
+}
+@media (min-width: 960px) { .hero-center { padding: 96px 0 88px; } }
+.hero-center-inner { position: relative; display: flex; flex-direction: column; align-items: center; }
+.hero-pill {
+  display: inline-flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px 10px; margin: 0 0 22px;
+  padding: 8px 16px; border-radius: 999px; background: var(--white); border: 1px solid rgba(184, 147, 90, 0.55);
+  font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--brand); line-height: 1.4;
+}
+.pill-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex: none; }
+.pill-sep { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); opacity: 0.8; flex: none; }
+.hero-center h1 { isolation: isolate; max-width: 15em; margin: 0 auto; font-size: clamp(36px, 6.4vw, 72px); line-height: 1.06; letter-spacing: -0.03em; }
+.hero-center h1 .hl { position: relative; color: var(--brand); white-space: nowrap; }
+.hero-center h1 .hl::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0.04em; height: 0.16em; border-radius: 4px; z-index: -1;
+  background: var(--gold); opacity: 0.55;
+}
+.hero-center .answer { max-width: 44em; margin: 22px auto 0; color: var(--muted); }
+.hero-center .btn-row { justify-content: center; margin-top: 30px; }
+@media (max-width: 559px) { .hero-center .btn-row { width: 100%; } }
+.hero-center .hero-proof { justify-content: center; flex-wrap: wrap; margin-top: 22px; }
+.stars { display: inline-flex; gap: 2px; }
+.stars .icon { width: 17px; height: 17px; fill: var(--gold); stroke: var(--gold); }
+.hero-services { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 32px; }
+.hero-services a {
+  display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border-radius: 999px; background: var(--white);
+  border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-size: 14px; font-weight: 600;
+}
+.hero-services a:hover { border-color: var(--brand); color: var(--brand); }
+@media (max-width: 559px) { .hero-services { display: none; } }
+
+/* ---------- Resources ---------- */
+.link-list { list-style: none; display: grid; gap: 12px; }
+.link-list a {
+  display: grid; gap: 4px; padding: 18px 20px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--card);
+  color: var(--ink); text-decoration: none; transition: border-color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+.section-tint .link-list a { background: var(--white); }
+.link-list a:hover { border-color: var(--brand); transform: translateY(-1px); }
+.link-list strong { font-size: 17px; }
+.link-list span { font-size: 15px; color: var(--muted); }
+.link-list em { display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; font-style: normal; font-size: 14px; font-weight: 600; color: var(--brand); }
+.link-list em .icon { width: 16px; height: 16px; }
+.state-grid { list-style: none; display: grid; gap: 10px; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 680px) { .state-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 1000px) { .state-grid { grid-template-columns: repeat(6, 1fr); } }
+.state-grid a { display: flex; align-items: center; min-height: 46px; padding: 0 14px; border-radius: 10px; background: var(--white); border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-size: 15px; font-weight: 500; }
+.state-grid a:hover { border-color: var(--brand); color: var(--brand); }
+.cal-grid { list-style: none; display: grid; gap: var(--gap); grid-template-columns: 1fr; }
+@media (min-width: 680px) { .cal-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .cal-grid { grid-template-columns: repeat(3, 1fr); } }
+.cal-card { background: var(--card); border: 1px solid var(--line); border-top: 3px solid var(--gold); border-radius: var(--radius); padding: 20px 22px; }
+.cal-card strong { display: block; font-size: 19px; color: var(--brand); margin-bottom: 6px; }
+.cal-card p { margin: 0; color: var(--muted); font-size: 16px; }
+/* Phone hero: one-line pill, and the call and contact buttons on screen above the round buttons before any scrolling */
+@media (max-width: 559px) {
+  .hero-center { padding: 24px 0 40px; }
+  .hero-pill { font-size: 11px; letter-spacing: 0.06em; padding: 7px 14px; margin-bottom: 16px; flex-wrap: nowrap; white-space: nowrap; }
+  .hero-pill .pill-sep, .hero-pill .pill-extra { display: none; }
+  .hero-center h1 { font-size: 34px; }
+  .hero-center .answer { font-size: 16px; line-height: 1.6; margin-top: 16px; }
+  .hero-center .btn-row { margin-top: 22px; }
+}

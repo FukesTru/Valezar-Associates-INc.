@@ -21,7 +21,7 @@
     menuButton.addEventListener('click', function () { setMenu(menu.hidden); });
   }
   window.addEventListener('resize', function () {
-    if (window.innerWidth >= 1240 && menu && !menu.hidden) setMenu(false);
+    if (window.innerWidth >= 1280 && menu && !menu.hidden) setMenu(false);
   });
 
   // Desktop dropdowns: open on hover or focus in CSS, and on press for touch and keyboard users

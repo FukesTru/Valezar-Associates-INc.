@@ -34,6 +34,7 @@ Mirtha, your new website is built. Before it goes live, please send the items in
 20. Three lines quoted from Google reviews, with names as shown on Google: Mortgage Nerd - Phil Stevenson, Andrew Headley and Dr. Raphael Cervera. Are you happy for us to quote them?
 21. "What happens after you contact us": a first conversation, a look at recent records, a proposal with the fee before work starts, then an engagement letter and the secure portal. Does that match how you take on new clients?
 22. "Which businesses do we work with": engineers and tradespeople, medical and dental practices, fitness centers and service businesses (from your current website). Any to add or remove?
+22a. **Headline.** The home page now opens with "Keep more of what your Miami business earns", taken from the line on your current site about keeping more of your hard-earned money. Happy with it?
 
 ### About page
 
@@ -90,3 +91,16 @@ Mirtha, your new website is built. Before it goes live, please send the items in
 61. **Privacy policy.** A new privacy policy for the website (it explains that the contact form and the chat run through LeadConnector, the platform behind your client messages), followed by your SMS Terms and Conditions from your current site, word for word except that the example address now reads ZIP 33186 (it said 33185) and "10:00am" reads "10am".
 62. **Terms of use.** Your current site has no terms page, so we wrote one. It says Florida law applies and disputes go to the courts of Miami-Dade County.
 63. **Appointments.** Your Google profile links to a Calendly page for appointments. The new website does not take bookings. Every Contact us and Call button goes to the contact form or the phone.
+
+### Resources pages (new)
+
+64. **What carried over.** From your current Resources section we kept the government forms (W-4, W-9, I-9), the 2 Department of Labor health plan notices, the IRS and SBA links, the refund tracker and the list of state tax departments. We checked every link, and fixed 2 that pointed to the wrong place: Vermont went to Virginia's site, and New York went to New York City finance.
+65. **What did not carry over.** The magazine articles, quick reads and e-books on your current site are licensed from your current website company, so we cannot copy them. We wrote 3 guides of our own instead: a year end tax checklist, a guide to 1099s and a guide to reading financial statements. The video library on your current site shows "video not found" for every video, so we left it out. If clients use a portal (the videos mention NetClient CS and Onvio), send us the login link and we will add it.
+66. **Tax guide PDFs.** The 2026 and 2025 tax guides are linked from where your current website company stores them. If that service ends, those links may stop working. Send us copies and we will host them on your new site.
+67. **1099 amounts.** The 1099 guide says that for payments made in 2026 and later you generally file a 1099-NEC when you pay a contractor $2,000 or more in the year, and that the amount was $600 for payments made in 2025.
+68. **Other 1099 rules.** Payments to most corporations are not reported, with exceptions such as legal fees. Card and payment app payments are reported on Form 1099-K by the payment company. A missing tax ID number can mean backup withholding. 10 or more information returns must be filed electronically. Florida has no state income tax filing for these forms.
+69. **Refund tracker facts.** You need your Social Security or taxpayer ID number, filing status and exact refund amount. Status shows about 24 hours after e-filing a current year return, 3 or 4 days for an earlier year, and about 4 weeks after mailing a paper return. Status updates once a day. The Florida Department of Revenue refund page is for other Florida taxes, such as sales tax.
+70. **Tax calendar.** January 15, 4th quarter estimate. January 31, W-2s, 1099-NEC, the 4th quarter Form 941, Form 940 and the Florida reemployment tax report. March 15, Forms 1065 and 1120-S. April 15, Forms 1040 and 1120, the 1st quarter estimate, extensions and IRA contributions for the year before. April 30, July 31 and October 31, Form 941 and the Florida reemployment tax report. May 1, the Florida annual report and Form F-1120 for most calendar year C corporations. June 15 and September 15, estimates. September 15, extended 1065 and 1120-S returns. October 15, extended 1040 and 1120 returns.
+71. **Florida sales tax.** Returns are due on the 1st of the month after the reporting period and are late after the 20th. Filing can be monthly, quarterly or yearly, depending on how much tax is collected.
+72. **Year end checklist.** A written acknowledgment from the charity is needed for any single gift of $250 or more. Some retirement plans must be opened by December 31 and others can be opened later.
+
