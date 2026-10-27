@@ -34,7 +34,7 @@ Mirtha, your new website is built. Before it goes live, please send the items in
 20. Three lines quoted from Google reviews, with names as shown on Google: Mortgage Nerd - Phil Stevenson, Andrew Headley and Dr. Raphael Cervera. Are you happy for us to quote them?
 21. "What happens after you contact us": a first conversation, a look at recent records, a proposal with the fee before work starts, then an engagement letter and the secure portal. Does that match how you take on new clients?
 22. "Which businesses do we work with": engineers and tradespeople, medical and dental practices, fitness centers and service businesses (from your current website). Any to add or remove?
-22a. **Headline.** The home page now opens with "Keep more of what your Miami business earns", taken from the line on your current site about keeping more of your hard-earned money. Happy with it?
+22a. **Headline.** The home page now opens with "Keep More Of What Your Business Earns", taken from the line on your current site about keeping more of your hard-earned money. Happy with it?
 
 ### About page
 
