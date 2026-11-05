@@ -27,6 +27,8 @@ about; how we work; fees; reviews; questions and answers; firm information; reso
 deadlines, forms and links, year end tax checklist, 1099 guide and reading financial statements; contact;
 privacy; terms. The resources section replaces the old site's Resources tab; its state link lists live in the
 refund tracker and forms pages. Tax figures on the resources pages change yearly, so review them each January.
+The Client Center (the old site's 4 client app logins) is part of the header block: a top bar with the address
+and hours on desktop from 1280px, and a Client Center section at the bottom of the phone menu below that.
 
 **Before go-live:**
 - The three CRM pieces (LeadConnector form, chat widget and review link) are in `site.json` `integrations` and

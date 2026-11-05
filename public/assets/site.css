@@ -163,6 +163,48 @@ strong { font-weight: 600; }
 .text-link:hover .icon { transform: translateX(3px); }
 .text-link:hover { text-decoration: underline; }
 
+/* ---------- Top bar: address, hours and the Client Center (desktop, alongside the full menu) ---------- */
+/* It scrolls away above the sticky header. Below 1280px the Client Center sits in the phone menu instead. */
+.topbar { display: none; position: relative; z-index: 60; background: var(--brand); color: var(--white); font-size: 14px; }
+.topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 44px; }
+.topbar-info { list-style: none; display: flex; align-items: center; gap: 28px; }
+.topbar-info li, .topbar-info a { display: inline-flex; align-items: center; gap: 8px; }
+.topbar-info a { color: var(--white); text-decoration: none; }
+.topbar-info a:hover { color: var(--white); text-decoration: underline; }
+.topbar-info .icon { width: 16px; height: 16px; color: var(--gold-light); }
+.topbar :focus-visible { outline-color: var(--white); }
+.client-center { position: relative; }
+.client-center > summary {
+  display: inline-flex; align-items: center; gap: 8px; height: 32px; padding: 0 12px; border-radius: 8px;
+  font-weight: 600; color: var(--white); background: rgba(255, 255, 255, 0.12); cursor: pointer; list-style: none; user-select: none;
+}
+.client-center > summary::-webkit-details-marker { display: none; }
+.client-center > summary:hover, .client-center[open] > summary { background: rgba(255, 255, 255, 0.22); }
+.client-center > summary .icon { width: 16px; height: 16px; }
+.client-center > summary .icon:last-child { transition: transform 0.2s var(--ease); }
+.client-center[open] > summary .icon:last-child { transform: rotate(180deg); }
+.cc-panel {
+  position: absolute; right: 0; top: calc(100% + 10px); width: 800px; display: grid; grid-template-columns: 224px minmax(0, 1fr);
+  background: var(--white); color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden;
+}
+.client-center[open] .cc-panel { animation: cc-in 0.18s var(--ease); }
+@keyframes cc-in { from { opacity: 0; transform: translateY(6px); } }
+.cc-intro { background: var(--tint); padding: 26px 24px; }
+.cc-title { margin: 0 0 8px; font-size: 19px; font-weight: 700; color: var(--ink); }
+.cc-intro p:not(.cc-title) { margin: 0; font-size: 15px; line-height: 1.55; color: var(--muted); }
+.cc-apps { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; padding: 14px; align-content: center; }
+.cc-apps a { display: flex; align-items: center; gap: 12px; padding: 12px 14px 12px 12px; border-radius: 8px; color: var(--ink); text-decoration: none; }
+.cc-apps a:hover { background: var(--tint); color: var(--ink); }
+.cc-apps a:hover strong { color: var(--brand); }
+.cc-icon { display: inline-flex; align-items: center; justify-content: center; flex: none; width: 46px; height: 46px; border-radius: var(--radius); background: rgba(109, 18, 17, 0.07); color: var(--brand); }
+.cc-icon .icon { width: 22px; height: 22px; }
+.cc-name { display: grid; gap: 2px; flex: 1; min-width: 0; }
+.cc-name strong { font-size: 15px; font-weight: 600; line-height: 1.3; }
+.cc-name span { font-size: 14px; line-height: 1.3; color: var(--muted); }
+.cc-apps a > .icon { width: 16px; height: 16px; color: var(--brand); }
+@media (min-width: 1280px) { .topbar { display: block; } }
+@media (prefers-reduced-motion: reduce) { .client-center[open] .cc-panel { animation: none; } }
+
 /* ---------- Header ---------- */
 /* The frosted background sits on a pseudo-element, so the header never becomes the containing block of the fixed phone menu */
 .site-header { position: sticky; top: 0; z-index: 50; border-bottom: 1px solid var(--line); }
@@ -231,6 +273,10 @@ strong { font-weight: 600; }
 .mm-list details[open] summary .icon { transform: rotate(180deg); }
 .mm-sub { list-style: none; padding: 0 0 12px 12px; }
 .mm-sub a { min-height: 46px; font-size: 16px; font-weight: 500; color: var(--muted); }
+.mm-apps a { gap: 12px; }
+.mm-apps a > span { display: grid; gap: 2px; padding: 6px 0; color: var(--ink); }
+.mm-apps small { font-size: 14px; font-weight: 400; color: var(--muted); }
+.mm-apps a > .icon { width: 16px; height: 16px; color: var(--brand); }
 .mm-actions { display: grid; gap: 12px; margin-top: 28px; }
 .mm-actions .btn { width: 100%; }
 @media (min-width: 1280px) { .mobile-menu { display: none !important; } }

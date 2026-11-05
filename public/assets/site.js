@@ -46,9 +46,22 @@
     }
   });
 
+  // Client Center in the top bar (a details element, so it opens without the script too):
+  // closes on a click outside it, on Escape, and as soon as the page scrolls
+  var clientCenter = document.querySelector('.client-center');
+  if (clientCenter) {
+    document.addEventListener('click', function (event) {
+      if (clientCenter.open && !clientCenter.contains(event.target)) clientCenter.open = false;
+    });
+    window.addEventListener('scroll', function () {
+      if (clientCenter.open && clientCenter.getBoundingClientRect().top < 0) clientCenter.open = false;
+    }, { passive: true });
+  }
+
   document.addEventListener('keydown', function (event) {
     if (event.key !== 'Escape') return;
     if (menu && !menu.hidden) { setMenu(false); menuButton.focus(); }
+    if (clientCenter && clientCenter.open) { clientCenter.open = false; clientCenter.querySelector('summary').focus(); }
   });
 
   // Every Contact us button lands with the whole form in the middle of the screen,

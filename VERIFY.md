@@ -104,3 +104,6 @@ Mirtha, your new website is built. Before it goes live, please send the items in
 71. **Florida sales tax.** Returns are due on the 1st of the month after the reporting period and are late after the 20th. Filing can be monthly, quarterly or yearly, depending on how much tax is collected.
 72. **Year end checklist.** A written acknowledgment from the charity is needed for any single gift of $250 or more. Some retirement plans must be opened by December 31 and others can be opened later.
 
+### Client Center (new)
+
+73. **Client Center links.** The Client Center button at the top of every page (inside the menu on a phone) links to the same 4 apps as your current website: QuickBooks Online, Payroll login, Online Cabinet login and RingCentral. We checked each one and changed 2. QuickBooks now goes to Intuit's standard sign in address (qbo.intuit.com), which opens the same sign in page as before. The RingCentral link on your current site opens a notice that RingCentral Meetings has been retired, so it now goes to RingCentral Video (v.ringcentral.com/join). Is RingCentral Video what your clients use to meet with you, and is there any other app or portal you want added?
