@@ -42,7 +42,10 @@
     { "file": "photo-staling-almanzar.jpg", "note": "Staling Almanzar, Payroll and HR Manager, studio headshot, dark suit and grey tie. From the current website. Team grids." },
     { "file": "photo-cynthia-moncada.jpg", "note": "Cynthia Moncada, Accounting Manager, studio headshot, black blazer. From the current website. Team grids." },
     { "file": "photo-katherine-guerrero.jpg", "note": "Katherine Guerrero, Accounting Associate, studio headshot, black blazer and white blouse. From the current website. Team grids." },
-    { "file": "photo-melissa-lacayo.jpg", "note": "Melissa Lacayo, Firm Administrator, studio headshot, black blazer and white collar. From the current website. Team grids." }
+    { "file": "photo-melissa-lacayo.jpg", "note": "Melissa Lacayo, Firm Administrator, studio headshot, black blazer and white collar. From the current website. Team grids." },
+    { "file": "logo-app-quickbooks-online.png", "note": "QuickBooks Online app logo, green circle with the white qb mark, transparent background. Taken from the Client Center on the client's current website. Client Center only." },
+    { "file": "logo-app-accountantsoffice.png", "note": "AccountantsOffice app logo, orange roof shape over a blue diamond, transparent background. From the current website's Client Center. Client Center, beside Payroll login and Online Cabinet login." },
+    { "file": "logo-app-ringcentral.png", "note": "RingCentral app logo, blue R in an orange rounded square, transparent background. From the current website's Client Center. Client Center only." }
   ],
   "must_keep": "",
   "integrations": {

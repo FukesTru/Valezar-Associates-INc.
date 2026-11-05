@@ -29,6 +29,7 @@ privacy; terms. The resources section replaces the old site's Resources tab; its
 refund tracker and forms pages. Tax figures on the resources pages change yearly, so review them each January.
 The Client Center (the old site's 4 client app logins) is part of the header block: a top bar with the address
 and hours on desktop from 1280px, and a Client Center section at the bottom of the phone menu below that.
+Each app shows its own logo (`images/logo-app-*.png`), the one deliberate exception to the one-colour icon set.
 
 **Before go-live:**
 - The three CRM pieces (LeadConnector form, chat widget and review link) are in `site.json` `integrations` and
