@@ -27,8 +27,16 @@ about; how we work; fees; reviews; questions and answers; firm information; reso
 deadlines, forms and links, year end tax checklist, 1099 guide and reading financial statements; contact;
 privacy; terms. The resources section replaces the old site's Resources tab; its state link lists live in the
 refund tracker and forms pages. Tax figures on the resources pages change yearly, so review them each January.
+The Client Center (the old site's 4 client app logins) is part of the header block: a top bar with the address
+and hours on desktop from 1280px, and a Client Center section at the bottom of the phone menu below that.
+Each app shows its own logo (`images/logo-app-*.png`), the one deliberate exception to the one-colour icon set.
 
 **Before go-live:**
+- Text messages (A2P 10DLC): the carriers' required SMS wording is on `/privacy/` (`#mobile-information`,
+  `#sms-terms`) and `/terms/#text-messages`, and every contact section links to both. Two things live in the
+  CRM, not in this repo: the website form needs its own unticked, optional SMS consent checkbox (a separate one
+  for marketing texts, if any) with privacy and terms links in the form footer, and the chat widget's consent
+  box must not be pre-ticked or required. Register the A2P campaign once www.valezar.com shows this site.
 - The three CRM pieces (LeadConnector form, chat widget and review link) are in `site.json` `integrations` and
   on every page exactly as given: the form inside `#contact-form`, the chat script once in the footer block.
   The round call and contact buttons are sized and placed to line up with the chat button (58px, 20px from the

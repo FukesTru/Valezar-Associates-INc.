@@ -40,7 +40,7 @@ Mirtha, your new website is built. Before it goes live, please send the items in
 
 23. **Credentials shown.** Enrolled Agent and Master's in Taxation (MST). LinkedIn also lists CTC (Certified Tax Coach), and a video calls you a Certified Tax Planner with the American Institute of Tax Planners. We left both off. Tell us the exact name and the issuing body if you want one added.
 24. **Your title.** Your website says "Managing Partner" and LinkedIn says "President". We used "owner". Which do you prefer?
-25. **The team.** Staling Almanzar (Payroll and HR Manager), Cynthia Moncada (Accounting Manager), Katherine Guerrero (Accounting Associate) and Melissa Lacayo (Firm Administrator), with the headshots from your current website. Is everyone still with the firm and happy to appear? Anyone to add? (Your SMS policy mentions a "Carlos".)
+25. **The team.** As you asked, only you and Staling Almanzar (Payroll and HR Manager) are listed, with the headshots from your current website. When the newer team members have photos, send each person's photo, name and job title and we will add them.
 26. **Enrolled Agent explanation.** "A person becomes an Enrolled Agent by passing a 3-part IRS exam, or through qualifying experience as an IRS employee. Enrolled Agents must keep up with continuing education." Please check.
 
 ### Services pages
@@ -88,8 +88,8 @@ Mirtha, your new website is built. Before it goes live, please send the items in
 
 59. **First conversation checklist.** For a business, the last 2 years of returns, recent statements, a list of accounts, payroll reports, entity documents and IRS or Florida letters. For a personal return, last year's return, W-2s and 1099s, other income, mortgage and property tax statements and IRS letters.
 60. **Texts.** Clients who agree may get texts about appointments, billing and payroll. Reply STOP stops them.
-61. **Privacy policy.** A new privacy policy for the website (it explains that the contact form and the chat run through LeadConnector, the platform behind your client messages), followed by your SMS Terms and Conditions from your current site, word for word except that the example address now reads ZIP 33186 (it said 33185) and "10:00am" reads "10am".
-62. **Terms of use.** Your current site has no terms page, so we wrote one. It says Florida law applies and disputes go to the courts of Miami-Dade County.
+61. **Privacy policy.** A new privacy policy for the website (it explains that the contact form and the chat run through LeadConnector, the platform behind your client messages), followed by your SMS Terms and Conditions from your current site. To meet the phone carriers' text message rules (A2P 10DLC registration), we added the carriers' standard sentence that no mobile information is shared with third parties or affiliates for marketing, a line that carriers are not liable for delayed or undelivered messages, what happens after someone replies STOP, and that agreeing to texts is not a condition of service. The 2 example texts now start with "Valezar & Associates:", and the appointment example no longer names Carlos. We added "Payroll reminders" to the message types, to match your payroll example. Is all of that right?
+62. **Terms and conditions.** Your current site has no terms page, so we wrote one. It says Florida law applies and disputes go to the courts of Miami-Dade County. It also carries the text messaging terms the carriers require: up to 2 messages a week, reply STOP to stop and HELP for help.
 63. **Appointments.** Your Google profile links to a Calendly page for appointments. The new website does not take bookings. Every Contact us and Call button goes to the contact form or the phone.
 
 ### Resources pages (new)
@@ -104,3 +104,10 @@ Mirtha, your new website is built. Before it goes live, please send the items in
 71. **Florida sales tax.** Returns are due on the 1st of the month after the reporting period and are late after the 20th. Filing can be monthly, quarterly or yearly, depending on how much tax is collected.
 72. **Year end checklist.** A written acknowledgment from the charity is needed for any single gift of $250 or more. Some retirement plans must be opened by December 31 and others can be opened later.
 
+### Client Center (new)
+
+73. **Client Center links.** The Client Center button at the top of every page (inside the menu on a phone) links to the same 4 apps as your current website: QuickBooks Online, Payroll login, Online Cabinet login and RingCentral. We checked each one and changed 2. QuickBooks now goes to Intuit's standard sign in address (qbo.intuit.com), which opens the same sign in page as before. The RingCentral link on your current site opens a notice that RingCentral Meetings has been retired, so it now goes to RingCentral Video (v.ringcentral.com/join). Is RingCentral Video what your clients use to meet with you, and is there any other app or portal you want added?
+
+### Text messages (new)
+
+74. **Marketing texts.** The site says you text people about their enquiry, appointments, follow-ups, billing and payroll. Do you also send, or plan to send, promotional texts, such as offers or tax season messages to people who are not clients yet? If yes, the website form needs a separate box for those, and the phone carriers need to know.
