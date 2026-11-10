@@ -388,12 +388,19 @@ strong { font-weight: 600; }
 .row h2 { margin-bottom: 16px; }
 
 /* Team */
-.team { display: grid; gap: var(--gap); grid-template-columns: repeat(2, 1fr); }
-@media (min-width: 1000px) { .team-4 { grid-template-columns: repeat(4, 1fr); } }
-.person { margin: 0; }
-.person img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--radius); background: var(--tint); }
-.person h3 { font-size: 17px; margin-top: 14px; }
-.person p { font-size: 14px; color: var(--muted); margin: 2px 0 0; }
+/* Team: one card per person, photo beside the name. White on a tinted band, tinted on white */
+.people { display: grid; gap: var(--gap); grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 900px) { .people-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.person-card {
+  margin: 0; display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 18px; align-items: center;
+  padding: 16px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.section-tint .person-card { background: var(--white); }
+.person-card img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%; border-radius: var(--radius); background: var(--tint); }
+.person-card h3 { font-size: var(--fs-h3); line-height: 1.25; }
+.person-role { margin: 6px 0 0; font-size: 15px; line-height: 1.35; font-weight: 600; color: var(--brand); }
+.person-card p:not(.person-role) { margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: var(--muted); }
+@media (min-width: 560px) { .person-card { grid-template-columns: 168px minmax(0, 1fr); gap: 28px; padding: 20px; } }
 .portrait img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%; border-radius: var(--radius); box-shadow: var(--shadow); }
 
 /* Reviews */

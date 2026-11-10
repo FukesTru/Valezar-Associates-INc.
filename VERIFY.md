@@ -40,7 +40,7 @@ Mirtha, your new website is built. Before it goes live, please send the items in
 
 23. **Credentials shown.** Enrolled Agent and Master's in Taxation (MST). LinkedIn also lists CTC (Certified Tax Coach), and a video calls you a Certified Tax Planner with the American Institute of Tax Planners. We left both off. Tell us the exact name and the issuing body if you want one added.
 24. **Your title.** Your website says "Managing Partner" and LinkedIn says "President". We used "owner". Which do you prefer?
-25. **The team.** Staling Almanzar (Payroll and HR Manager), Cynthia Moncada (Accounting Manager), Katherine Guerrero (Accounting Associate) and Melissa Lacayo (Firm Administrator), with the headshots from your current website. Is everyone still with the firm and happy to appear? Anyone to add? (Your SMS policy mentions a "Carlos".)
+25. **The team.** As you asked, only you and Staling Almanzar (Payroll and HR Manager) are listed, with the headshots from your current website. When the newer team members have photos, send each person's photo, name and job title and we will add them.
 26. **Enrolled Agent explanation.** "A person becomes an Enrolled Agent by passing a 3-part IRS exam, or through qualifying experience as an IRS employee. Enrolled Agents must keep up with continuing education." Please check.
 
 ### Services pages
